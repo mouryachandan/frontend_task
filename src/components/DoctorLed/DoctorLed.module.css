@@ -1,0 +1,16 @@
+.section {
+  padding: 56px 0;
+  background: var(--white);
+}
+
+.sectionImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 40px 0;
+  }
+}

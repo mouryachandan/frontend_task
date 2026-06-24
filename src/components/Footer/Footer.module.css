@@ -1,0 +1,16 @@
+.footer {
+  background: var(--footer-bg);
+  padding-bottom: 120px;
+}
+
+.footerImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding-bottom: 140px;
+  }
+}

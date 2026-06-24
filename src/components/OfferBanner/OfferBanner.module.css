@@ -1,0 +1,17 @@
+.banner {
+  background: #d2ebe3;
+  text-align: center;
+  padding: 10px 16px;
+  font-size: 0.875rem;
+  color: var(--text-dark);
+}
+
+.strike {
+  text-decoration: line-through;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.banner strong {
+  font-weight: 700;
+}

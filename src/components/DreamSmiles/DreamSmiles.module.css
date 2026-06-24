@@ -1,0 +1,141 @@
+.section {
+  padding: 56px 0 72px;
+  background: var(--white);
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.paragraph {
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  line-height: 1.7;
+  font-size: 0.9rem;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: var(--white);
+  border-radius: 16px;
+  padding: 28px 28px 28px 32px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.07);
+  border: 1px solid #f0f0f0;
+}
+
+.cardBody {
+  flex: 1;
+}
+
+.cardTitle {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.pricing {
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.strike {
+  text-decoration: line-through;
+  color: var(--text-light);
+}
+
+.price {
+  color: var(--purple);
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.taxNote {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  font-weight: 400;
+}
+
+.features {
+  margin-bottom: 16px;
+}
+
+.features li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+  color: var(--text-dark);
+}
+
+.check {
+  color: var(--green);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.learnMore {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--purple);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: gap 0.2s ease;
+}
+
+.learnMore:hover {
+  gap: 10px;
+}
+
+.cardImage {
+  flex-shrink: 0;
+}
+
+.cardImage img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--purple-light);
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 40px 0 56px;
+  }
+
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 24px;
+  }
+
+  .features li {
+    justify-content: center;
+  }
+}

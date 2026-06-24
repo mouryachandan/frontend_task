@@ -1,0 +1,37 @@
+.marquee {
+  background: #dceef5;
+  overflow: hidden;
+  padding: 11px 0;
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
+
+.item {
+  white-space: nowrap;
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--text-dark);
+  padding: 0 12px;
+}
+
+.item strong {
+  font-weight: 700;
+}
+
+.dot {
+  margin-left: 12px;
+  color: var(--text-muted);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

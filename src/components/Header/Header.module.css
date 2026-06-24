@@ -1,0 +1,52 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--white);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.logoWhistle {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--purple);
+  letter-spacing: -0.5px;
+  font-style: italic;
+}
+
+.logoTagline {
+  font-size: 0.55rem;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  color: var(--purple);
+  margin-top: 1px;
+}
+
+.phoneBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--purple);
+  color: var(--white);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.phoneBtn:hover {
+  background: var(--purple-dark);
+  transform: scale(1.05);
+}
